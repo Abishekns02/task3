@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Array</title>
+  </head>
+
+  <body>
+    <h2>JavaScript Array 03</h2>
+    <p id="rx1"></p>
+    <p id="rx2"></p>
+    <p id="rx3"></p>
+    <p id="rx4"></p>
+    <p id="rx5"></p>
+    <script>
+      const cargoHold = [
+        "oxygen tanks",
+        "space suits",
+        "parrot",
+        "instruction manual",
+        "meal packs",
+        "slinky",
+        "security blanket",
+      ];
+
+      document.getElementById("rx1").innerHTML = cargoHold;
+      cargoHold.splice(3, 0, "keys");
+      document.getElementById("rx2").innerHTML = cargoHold;
+      cargoHold.splice(cargoHold.indexOf("instruction manual"), 1);
+
+      document.getElementById("rx3").innerHTML = cargoHold;
+      cargoHold.splice(2, 0, "cat", "fob", "string cheese");
+      document.getElementById("rx4").innerHTML = cargoHold;
+    </script>
+  </body>
+</html>

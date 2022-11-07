@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Array</title>
+  </head>
+
+  <body>
+    <h2>JavaScript Array 5</h2>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+    <p id="g"></p>
+    <p id="h"></p>
+    <p id="i"></p>
+    <p id="j"></p>
+    <p id="k"></p>
+    
+    <script>
+      var str = "In space, no one can hear you code.";
+
+      document.getElementById("a").innerHTML =
+        "str.split() : [" + str.split() + "]";
+      document.getElementById("b").innerHTML =
+        "str.split('e'): [" + str.split("e") + "]";
+
+      document.getElementById("c").innerHTML =
+        "str.split(' '): [" + str.split(" ") + "]";
+      document.getElementById("d").innerHTML =
+        "str.split(''): [" + str.split("") + "]";
+      document.getElementById("e").innerHTML =
+        "original array : [" + str + "]";
+
+      var arr = ["B", "n", "n", 5];
+      document.getElementById("f").innerHTML =
+        "arr.join() : [" + arr.join() + "]";
+      document.getElementById("g").innerHTML =
+        "arr.join('a'): [" + arr.join("a") + "]";
+
+      document.getElementById("h").innerHTML =
+        "arr.join(' '): [" + arr.join(" ") + "]";
+      document.getElementById("i").innerHTML =
+        "arr.join('') : [" + arr.join("") + "]";
+      document.getElementById("j").innerHTML =
+        "original array : [" + arr + "]";
+
+      const material = [
+        "water",
+        "space suits",
+        "food",
+        "plasma sword",
+        "batteries",
+      ];
+      material.sort();
+      document.getElementById("k").innerHTML =
+        ": [" + material.join(" ") + "]";
+    </script>
+  </body>
+</html>
